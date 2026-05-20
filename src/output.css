@@ -340,6 +340,12 @@
   .max-w-300 {
     max-width: calc(var(--spacing) * 300);
   }
+  .max-w-\[500px\] {
+    max-width: 500px;
+  }
+  .max-w-\[700px\] {
+    max-width: 700px;
+  }
   .max-w-\[1200px\] {
     max-width: 1200px;
   }
@@ -379,6 +385,9 @@
   .items-center {
     align-items: center;
   }
+  .items-end {
+    align-items: flex-end;
+  }
   .items-start {
     align-items: flex-start;
   }
@@ -399,6 +408,9 @@
   }
   .gap-\[20px\] {
     gap: 20px;
+  }
+  .gap-\[25px\] {
+    gap: 25px;
   }
   .gap-\[30px\] {
     gap: 30px;
@@ -523,6 +535,9 @@
   .pb-\[10px\] {
     padding-bottom: 10px;
   }
+  .pb-\[40px\] {
+    padding-bottom: 40px;
+  }
   .pl-\[10px\] {
     padding-left: 10px;
   }
@@ -531,6 +546,9 @@
   }
   .text-center {
     text-align: center;
+  }
+  .text-right {
+    text-align: right;
   }
   .text-\[14px\] {
     font-size: 14px;
@@ -571,6 +589,10 @@
   .text-\[45px\] {
     font-size: 45px;
   }
+  .leading-\[25px\] {
+    --tw-leading: 25px;
+    line-height: 25px;
+  }
   .leading-\[28px\] {
     --tw-leading: 28px;
     line-height: 28px;
@@ -603,6 +625,9 @@
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
   }
+  .break-all {
+    word-break: break-all;
+  }
   .text-\[\#4D8F76\] {
     color: #4D8F76;
   }
@@ -611,6 +636,9 @@
   }
   .text-\[\#5F5F5F\] {
     color: #5F5F5F;
+  }
+  .text-\[\#8A8A8A\] {
+    color: #8A8A8A;
   }
   .text-\[\#8C7A5B\] {
     color: #8C7A5B;
@@ -951,6 +979,16 @@
       width: auto;
     }
   }
+  .lg\:max-w-\[420px\] {
+    @media (width >= 64rem) {
+      max-width: 420px;
+    }
+  }
+  .lg\:max-w-\[500px\] {
+    @media (width >= 64rem) {
+      max-width: 500px;
+    }
+  }
   .lg\:min-w-0 {
     @media (width >= 64rem) {
       min-width: calc(var(--spacing) * 0);
@@ -966,6 +1004,11 @@
       flex-direction: row;
     }
   }
+  .lg\:items-end {
+    @media (width >= 64rem) {
+      align-items: flex-end;
+    }
+  }
   .lg\:items-start {
     @media (width >= 64rem) {
       align-items: flex-start;
@@ -974,6 +1017,11 @@
   .lg\:justify-between {
     @media (width >= 64rem) {
       justify-content: space-between;
+    }
+  }
+  .lg\:justify-end {
+    @media (width >= 64rem) {
+      justify-content: flex-end;
     }
   }
   .lg\:justify-start {
@@ -989,6 +1037,11 @@
   .lg\:text-left {
     @media (width >= 64rem) {
       text-align: left;
+    }
+  }
+  .lg\:text-right {
+    @media (width >= 64rem) {
+      text-align: right;
     }
   }
 }
